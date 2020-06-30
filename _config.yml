@@ -1,1 +1,8 @@
-theme: default
+# Site settings
+title: 'dmzx'
+description: null
+baseurl: null # the subpath of your site, e.g. /blog/
+url: null # the base hostname & protocol for your site
+
+
+theme: null
