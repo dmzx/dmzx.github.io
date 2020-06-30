@@ -1,0 +1,20 @@
+{
+    "stable": {
+        "1.0": {
+            "current": "1.0.1",
+            "download": "https://github.com/dmzx/Special-Title/archive/master.zip",
+            "announcement": "http://www.dmzx-web.net/viewtopic.php?p=3335#p3335",
+            "eol": null,
+            "security": false
+        }
+    },
+    "unstable": {
+        "1.0": {
+            "current": "1.0.1",
+            "download": "http://www.dmzx-web.net/viewtopic.php?p=3335#p3335",
+            "announcement": "http://www.dmzx-web.net",
+            "eol": null,
+            "security": false
+        }
+    }
+}

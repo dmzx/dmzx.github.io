@@ -1,0 +1,20 @@
+{
+    "stable": {
+        "1.0": {
+            "current": "1.0.2",
+            "download": "http://www.dmzx-web.net/viewtopic.php?p=7854#p7854",
+            "announcement": "http://www.dmzx-web.net/viewtopic.php?p=7854#p7854",
+            "eol": null,
+            "security": false
+        }
+    },
+    "unstable": {
+        "1.0": {
+            "current": "1.0.2",
+            "download": "http://www.dmzx-web.net/viewtopic.php?p=7854#p7854",
+            "announcement": "http://www.dmzx-web.net/viewtopic.php?p=7854#p7854",
+            "eol": null,
+            "security": false
+        }
+    }
+}

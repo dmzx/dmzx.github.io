@@ -1,0 +1,20 @@
+{
+    "stable": {
+        "1.0": {
+            "current": "1.0.1",
+            "download": "http://www.dmzx-web.net/downloadsystemcat?id=43",
+            "announcement": "http://www.dmzx-web.net/viewtopic.php?p=2675#p2675",
+            "eol": null,
+            "security": false
+        }
+    },
+    "unstable": {
+        "1.0": {
+            "current": "1.0.1",
+            "download": "http://www.dmzx-web.net/downloadsystemcat?id=43",
+            "announcement": "http://www.dmzx-web.net/viewtopic.php?p=2675#p2675",
+            "eol": null,
+            "security": false
+        }
+    }
+}

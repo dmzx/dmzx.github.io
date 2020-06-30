@@ -1,0 +1,20 @@
+{
+    "stable": {
+        "1.0": {
+            "current": "1.0.2",
+            "download": "https://www.dmzx-web.net/downloadsystemdownload?id=298",
+            "announcement": "https://www.dmzx-web.net/viewtopic.php?p=22877#p22877",
+            "eol": null,
+            "security": false
+        }
+    },
+    "unstable": {
+        "1.0": {
+            "current": "1.0.2",
+            "download": "https://www.dmzx-web.net/downloadsystemdownload?id=298",
+            "announcement": "https://www.dmzx-web.net/viewtopic.php?p=22877#p22877",
+            "eol": null,
+            "security": false
+        }
+    }
+}
