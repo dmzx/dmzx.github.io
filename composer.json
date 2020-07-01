@@ -1,5 +1,5 @@
 {
-	"name": "alfredo-ramos/phpbb-extensions",
+	"name": "dmzx/phpbb-extensions",
 	"description": "Personal Composer repository powered by Satis",
 	"type": "project",
 	"license": "GPL-2.0-only",
@@ -8,9 +8,9 @@
 	},
 	"authors": [
 		{
-			"name": "Alfredo Ramos",
-			"email": "alfredo.ramos@yandex.com",
-			"homepage": "https://github.com/AlfredoRamos",
+			"name": "dmzx",
+			"email": "info@dmzx-web.net",
+			"homepage": "https://github.com/dmzx",
 			"role": "Lead Developer"
 		}
 	]
