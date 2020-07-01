@@ -1,0 +1,83 @@
+[
+	{
+		"group": "jquery",
+		"files": [
+			{
+				"name": "jquery.slim",
+				"version": "3.4.1",
+				"minified": true,
+				"cdn": "cdnjs",
+				"integrity": "sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			}
+		]
+	},
+	{
+		"group": "popper.js",
+		"files": [
+			{
+				"name": "popper",
+				"version": "1.16.1",
+				"path": "umd",
+				"minified": true,
+				"cdn": "cdnjs",
+				"integrity": "sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			}
+		]
+	},
+	{
+		"group": "twitter-bootstrap",
+		"files": [
+			{
+				"name": "bootstrap",
+				"version": "4.4.1",
+				"path": "js",
+				"minified": true,
+				"cdn": "cdnjs",
+				"integrity": "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			}
+		]
+	},
+	{
+		"group": "lightcase",
+		"files": [
+			{
+				"name": "lightcase",
+				"version": "2.5.0",
+				"path": "js",
+				"minified": true,
+				"cdn": "cdnjs",
+				"integrity": "sha384-LJSSwrbrfIsOo3p6sCohLJKITSepfjQs/+7JV4osRQ8sDTGH9d2sSYcfjjMazxCv"
+			},
+			{
+				"name": "lightcase.init",
+				"version": null,
+				"minified": false,
+				"cdn": null
+			}
+		]
+	},
+	{
+		"group": "lazysizes",
+		"files": [
+			{
+				"name": "lazysizes",
+				"version": "5.2.0",
+				"minified": true,
+				"cdn": "cdnjs",
+				"integrity": "sha384-lXlOikwyrW7dmgxBebidKy+ffqirROw7KfpwSU07ze9QxhA26X7SuQsujgf3xo1A"
+			}
+		]
+	},
+	{
+		"group": "iconify",
+		"files": [
+			{
+				"name": "iconify",
+				"version": "1.0.6",
+				"minified": true,
+				"cdn": "iconify",
+				"integrity": "sha384-bAajreKT0Wnit/3jZuKM1e+O7S7+L97dPjjh/4zCbeaY6tpyUOm58oHCYMugl5N7"
+			}
+		]
+	}
+]

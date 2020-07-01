@@ -1,0 +1,21 @@
+.post {
+	.highlight {
+		> pre {
+			padding: get-pixels($spacing);
+		}
+	}
+
+	.footer {
+		.tags {
+			display: inline-block;
+		}
+	}
+
+	picture {
+		height: 225px;
+
+		.card-img-top {
+			object-fit: cover;
+		}
+	}
+}

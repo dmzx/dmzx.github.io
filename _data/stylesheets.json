@@ -1,0 +1,61 @@
+[
+	{
+		"group": "twitter-bootstrap",
+		"files": [
+			{
+				"name": "bootstrap",
+				"version": "4.4.1",
+				"path": "css",
+				"minified": true,
+				"cdn": "cdnjs",
+				"integrity": "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			}
+		]
+	},
+	{
+		"group": "main",
+		"files": [
+			{
+				"name": "main",
+				"version": null,
+				"minified": false,
+				"cdn": null
+			}
+		]
+	},
+	{
+		"group": "github",
+		"files": [
+			{
+				"name": "github",
+				"version": null,
+				"minified": false,
+				"cdn": null
+			}
+		]
+	},
+	{
+		"group": "marquee",
+		"files": [
+			{
+				"name": "marquee",
+				"version": null,
+				"minified": false,
+				"cdn": null
+			}
+		]
+	},
+	{
+		"group": "lightcase",
+		"files": [
+			{
+				"name": "lightcase",
+				"version": "2.5.0",
+				"path": "css",
+				"minified": true,
+				"cdn": "cdnjs",
+				"integrity": "sha384-jG6I54lQOGf7uZjliUGfGFWUMwuq8NQiuBrWu9qEUEh7ARsUVTMD1XcRSev3dKDC"
+			}
+		]
+	}
+]

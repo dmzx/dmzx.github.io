@@ -1,0 +1,38 @@
+---
+title: Tags
+permalink: /tags/
+description: A collection of posts listed by tag.
+---
+{%- if site.tags.size > 0 %}
+<p>Click on a tag to see its posts.</p>
+<ul class="list-inline">
+	{%- for tag in site.tags %}
+	<li class="list-inline-item">
+		<a href="#{{ tag.first | uri_escape }}" class="badge badge-primary">
+			{{ tag.first | escape}}
+		</a>
+	</li>
+	{%- endfor %}
+</ul>
+
+<hr />
+
+<ul class="list-links">
+	{%- for tag in site.tags %}
+	{%- assign posts = site.posts
+	| where_exp: 'post', 'post.tags contains tag.first' -%}
+	<li id="{{ tag.first | uri_escape }}">
+		<h4>{{ tag.first | escape }}</h4>
+		<ul class="list-posts">
+			{%- for post in posts -%}
+			<li>
+				<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+			</li>
+			{%- endfor -%}
+		</ul>
+	</li>
+	{%- endfor %}
+</ul>
+{%- else %}
+<p>Nothing interesting to show :/</p>
+{%- endif %}

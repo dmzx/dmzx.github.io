@@ -1,0 +1,115 @@
+<aside class="sidebar col-lg-3">
+	{%- if site.data.networks.size > 0 %}
+	<section id="about" class="widget mb-4">
+		<header class="header">
+			<h3>About</h3>
+		</header>
+		<div class="body">
+			{%- if site.github.owner.avatar_url.size > 0 %}
+			<figure class="avatar">
+				<img data-src="{{ site.github.owner.avatar_url | uri_escape }}" alt="{{ site.github.owner.name | default: site.title | escape }}" class="img-fluid rounded d-block mx-auto lazyload" width="250" height="250">
+			</figure>
+			{%- endif %}
+			{%- if site.github.owner.bio.size > 0 %}
+			<p>{{ site.github.owner.bio | escape }}</p>
+			{%- endif %}
+			<ul id="social-networks" class="list-unstyled">
+				{%- for network in site.data.networks %}
+				<li>
+					{%- if network.url.size > 0 %}
+					<a href="{{ network.url | append: network.user | uri_escape }}" target="_blank" rel="external noreferrer noopener" title="{{ network.user | escape }} @ {{ network.name | escape }}">
+						{%- if network.icon.size > 0 -%}
+						<span class="iconify inline-icon social-icon {{ network.name | slugify }}-icon" data-icon="{{ network.icon }}"></span>
+						{%- endif -%}
+						{{ network.user | escape }}
+					</a>
+					{%- else %}
+					<code class="social-username" title="{{ network.user | escape }} @ {{ network.name | escape }}">
+						{%- if network.icon.size > 0 -%}
+						<span class="iconify inline-icon social-icon {{ network.name | slugify }}-icon" data-icon="{{ network.icon }}"></span>
+						{%- endif -%}
+						{{ network.user | escape }}
+					</code>
+					{%- endif %}
+				</li>
+				{%- endfor %}
+			</ul>
+		</div>
+	</section>
+	{%- unless page.url == '/donate/' %}
+	<section id="donate" class="widget mb-4">
+		<header class="header">
+			<h3>Donate</h3>
+		</header>
+		<div class="body">
+			{% include donation.html %}
+		</div>
+	</section>
+	{%- endunless %}
+	{%- endif %}
+	{%- if site.related_posts.size > 0 %}
+	<section id="related-posts" class="widget mb-4">
+		<header class="header">
+			<h3>Related posts</h3>
+		</header>
+		<div class="body">
+			<ul class="list-related-posts list-group list-group-flush">
+				{%- for p in site.related_posts %}
+				<li class="list-group-item px-0 py-1">
+					<a href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
+				</li>
+				{%- endfor %}
+			</ul>
+		</div>
+	</section>
+	{%- endif %}
+	{%- if site.posts.size > 0 %}
+	{%- assign archives = site.posts | group_by_exp: 'post','post.date | date: "%Y"' -%}
+	<section id="archives" class="widget mb-4">
+		<header class="header">
+			<h3>Archives</h3>
+		</header>
+		<div class="body">
+			<div class="list-archives">
+				{%- for archive in archives %}
+				<a href="{{ site.data.pages | where: 'name', 'archives' | map: 'uri' | first | relative_url }}#{{ archive.name | uri_escape }}" class="badge badge-light">
+					{{ archive.name | escape}}
+				</a>
+				{%- endfor %}
+			</div>
+		</div>
+	</section>
+	{%- endif %}
+	{%- if site.categories.size > 0 %}
+	<section id="categories" class="widget mb-4">
+		<header class="header">
+			<h3>Categories</h3>
+		</header>
+		<div class="body">
+			<div class="list-categories">
+				{%- for category in site.categories %}
+				<a href="{{ site.data.pages | where: 'name', 'categories' | map: 'uri' | first | relative_url }}#{{ category.first | uri_escape }}" class="badge badge-light">
+					{{ category.first | escape}}
+				</a>
+				{%- endfor %}
+			</div>
+		</div>
+	</section>
+	{%- endif %}
+	{%- if site.tags.size > 0 %}
+	<section id="tags" class="widget mb-4">
+		<header class="header">
+			<h3>Tags</h3>
+		</header>
+		<div class="body">
+			<div class="list-tags">
+				{%- for tag in site.tags %}
+				<a href="{{ site.data.pages | where: 'name', 'tags' | map: 'uri' | first | relative_url }}#{{ tag.first | uri_escape }}" class="badge badge-light">
+					{{ tag.first | escape}}
+				</a>
+				{%- endfor %}
+			</div>
+		</div>
+	</section>
+	{%- endif %}
+</aside>
