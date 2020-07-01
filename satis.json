@@ -9,7 +9,7 @@
 		}
 	],
 	"require": {
-		"dmzx/copyright-extended": ">=1.0.0"
+		"dmzx/copyrightextended": ">=1.0.0"
 	},
 	"output-dir": "phpbb-extensions"
 }
