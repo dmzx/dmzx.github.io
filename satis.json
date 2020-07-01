@@ -6,10 +6,15 @@
 		{
 			"type": "vcs",
 			"url": "https://github.com/dmzx/Copyright-Extended.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/dmzx/Watermark.git"
 		}
 	],
 	"require": {
-		"dmzx/copyrightextended": ">=1.0.0"
+		"dmzx/copyrightextended": ">=1.0.0",
+		"dmzx/watermark": ">=1.0.0"
 	},
 	"output-dir": "phpbb-extensions"
 }
