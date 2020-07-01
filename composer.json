@@ -5,7 +5,7 @@
 	"license": "GPL-2.0-only",
 	"require": {
 		"composer/satis": "dev-master",
-		"minimum-stability": 7.3,
+		"minimum-stability": 7,
         "prefer-stable": true
 	},
 	"authors": [
