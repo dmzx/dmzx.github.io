@@ -111,6 +111,67 @@
                     "issues": "https://github.com/dmzx/Copyright-Extended/issues"
                 }
             }
+        },
+        "dmzx/watermark": {
+            "dev-master": {
+                "name": "dmzx/watermark",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/dmzx/Watermark.git",
+                    "reference": "c4631066165d34708d69daa76529587f27d97d25"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmzx/Watermark/zipball/c4631066165d34708d69daa76529587f27d97d25",
+                    "reference": "c4631066165d34708d69daa76529587f27d97d25",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "~1.0",
+                    "php": ">=7.1.3"
+                },
+                "require-dev": {
+                    "phpbb/epv": "dev-master"
+                },
+                "time": "2020-06-03T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Watermark",
+                    "soft-require": {
+                        "phpbb/phpbb": ">=3.3.0,<4.4.0@dev"
+                    },
+                    "version-check": {
+                        "host": "www.dmzx-web.net",
+                        "directory": "/versions",
+                        "filename": "watermark_version.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "dmzx",
+                        "email": "info@dmzx-web.net",
+                        "homepage": "https://www.dmzx-web.net",
+                        "role": "Extension developer"
+                    }
+                ],
+                "description": "Watermark automatically images by upload.",
+                "homepage": "https://www.dmzx-web.net",
+                "keywords": [
+                    "extension",
+                    "phpbb",
+                    "watermark"
+                ],
+                "support": {
+                    "source": "https://github.com/dmzx/Watermark/tree/master",
+                    "issues": "https://github.com/dmzx/Watermark/issues"
+                }
+            }
         }
     }
 }
